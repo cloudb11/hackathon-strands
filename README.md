@@ -2,14 +2,14 @@
 
 A conversational AI assistant with RAG (Retrieval-Augmented Generation), multi-turn conversation memory, and persistent session storage — built with the Strands Agents SDK.
 
-Key Features
+## Key Features
 
-Conversation Memory — Per-session agents remember the full conversation history using SummarizingConversationManager (summarizes older messages instead of discarding them)
-Session Persistence — Conversations persist to disk via FileSessionManager and survive server restarts
-Smart RAG Chunking — Recursive, boundary-aware text splitting (paragraph → sentence → word) instead of naive character slicing
-Auto-Injected KB Context — Every query automatically retrieves relevant knowledge base chunks and injects them into the prompt (no reliance on tool-calling behavior)
-Persistent Vector Store — ChromaDB with PersistentClient so ingested documents survive restarts
-Multi-Format Ingestion — Supports .txt, .pdf, and .docx file uploads
+- Conversation Memory — Per-session agents remember the full conversation history using SummarizingConversationManager (summarizes older messages instead of discarding them)
+- Session Persistence — Conversations persist to disk via FileSessionManager and survive server restarts
+- Smart RAG Chunking — Recursive, boundary-aware text splitting (paragraph → sentence → word) instead of naive character slicing
+- Auto-Injected KB Context — Every query automatically retrieves relevant knowledge base chunks and injects them into the prompt (no reliance on tool-calling behavior)
+- Persistent Vector Store — ChromaDB with PersistentClient so ingested documents survive restarts
+- Multi-Format Ingestion — Supports .txt, .pdf, and .docx file uploads
 
 Directory Structure
 hackathon-strands/
