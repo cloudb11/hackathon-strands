@@ -1,4 +1,4 @@
-#AI Hackathon Boilerplate (Strands Agent + RAG)
+# AI Hackathon Boilerplate (Strands Agent + RAG)
 
 A conversational AI assistant with RAG (Retrieval-Augmented Generation), multi-turn conversation memory, and persistent session storage — built with the Strands Agents SDK.
 
