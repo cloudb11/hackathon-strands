@@ -13,6 +13,7 @@ A conversational AI assistant with RAG (Retrieval-Augmented Generation), multi-t
 
 ## Directory Structure
 
+```text
 hackathon-strands/
 ├── backend/
 │   ├── main.py              # FastAPI server with /ingest, /query, /session, /health endpoints
@@ -27,6 +28,7 @@ hackathon-strands/
 │   ├── app.js               # Frontend logic (upload, chat, session tracking)
 │   └── style.css            # Styling
 └── README.md
+```
 
 Quick Start
 
