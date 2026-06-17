@@ -30,7 +30,7 @@ hackathon-strands/
 └── README.md
 ```
 
-Quick Start
+## Quick Start
 
 1. Install dependencies
 cd backend
@@ -39,16 +39,16 @@ pip install -r requirements.txt
 2. Configure AI provider
 Edit ai_service.py — uncomment the model provider you need. Set environment variables:
 
-# For Bedrock (default)
+### For Bedrock (default)
 export AWS_REGION="eu-central-1"
 export AI_MODEL="eu.anthropic.claude-sonnet-4-5-20250929-v1:0"
 
-# For OpenAI / compatible
+### For OpenAI / compatible
 export AI_API_KEY="your-key"
 export AI_API_URL="https://api.openai.com/v1"
 export AI_MODEL="gpt-4o"
 
-# For Anthropic direct
+### For Anthropic direct
 export AI_MODEL="claude-sonnet-4-20250514"
 
 3. Run backend
