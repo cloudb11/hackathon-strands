@@ -1,13 +1,16 @@
-AI Hackathon Boilerplate (Strands Agent + RAG)
+#AI Hackathon Boilerplate (Strands Agent + RAG)
+
 A conversational AI assistant with RAG (Retrieval-Augmented Generation), multi-turn conversation memory, and persistent session storage — built with the Strands Agents SDK.
 
 Key Features
+
 Conversation Memory — Per-session agents remember the full conversation history using SummarizingConversationManager (summarizes older messages instead of discarding them)
 Session Persistence — Conversations persist to disk via FileSessionManager and survive server restarts
 Smart RAG Chunking — Recursive, boundary-aware text splitting (paragraph → sentence → word) instead of naive character slicing
 Auto-Injected KB Context — Every query automatically retrieves relevant knowledge base chunks and injects them into the prompt (no reliance on tool-calling behavior)
 Persistent Vector Store — ChromaDB with PersistentClient so ingested documents survive restarts
 Multi-Format Ingestion — Supports .txt, .pdf, and .docx file uploads
+
 Directory Structure
 hackathon-strands/
 ├── backend/
@@ -23,10 +26,13 @@ hackathon-strands/
 │   ├── app.js               # Frontend logic (upload, chat, session tracking)
 │   └── style.css            # Styling
 └── README.md
+
 Quick Start
+
 1. Install dependencies
 cd backend
 pip install -r requirements.txt
+
 2. Configure AI provider
 Edit ai_service.py — uncomment the model provider you need. Set environment variables:
 
@@ -41,9 +47,11 @@ export AI_MODEL="gpt-4o"
 
 # For Anthropic direct
 export AI_MODEL="claude-sonnet-4-20250514"
+
 3. Run backend
 cd backend
 uvicorn main:app --reload --port 8000
+
 4. Run frontend
 cd frontend
 python -m http.server 3000
@@ -67,6 +75,7 @@ curl -X POST http://localhost:8000/query \
   -H "Content-Type: application/json" \
   -d '{"question": "What is my name?", "session_id": "abc-123-..."}'
 # → {"answer": "Your name is Alice!", "session_id": "abc-123-..."}
+
 Architecture
 ┌─────────────┐       ┌──────────────────────────────────────────────┐
 │  Frontend   │       │                  Backend                     │
