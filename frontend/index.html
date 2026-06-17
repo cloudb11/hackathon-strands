@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1 id="app-title">AI Assistant</h1>
+        <div id="upload-section">
+            <input type="file" id="file-input" multiple>
+            <button onclick="uploadFiles()">Upload to Knowledge Base</button>
+            <span id="upload-status"></span>
+        </div>
+        <div id="chat-section">
+            <div id="messages"></div>
+            <div id="input-row">
+                <input type="text" id="question" placeholder="Ask a question..." onkeydown="if(event.key==='Enter')askQuestion()">
+                <button onclick="askQuestion()">Send</button>
+                <button onclick="newSession()" style="background:#6b7280;">New Session</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js?v=2"></script>
+</body>
+</html>
+

@@ -1,0 +1,17 @@
+# API server
+fastapi
+uvicorn
+
+# AI / Agent SDK (includes SummarizingConversationManager, FileSessionManager)
+strands-agents
+strands-agents-tools
+boto3
+
+# Vector store (PersistentClient for durable storage)
+chromadb
+
+# File upload & parsing
+python-multipart
+python-docx
+PyPDF2
+
