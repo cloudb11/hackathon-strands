@@ -19,9 +19,10 @@ model = BedrockModel(
 
 # Option 2: OpenAI / OpenAI-compatible endpoint
 # from strands.models import OpenAIModel
+# import httpx
 # model = OpenAIModel(
 #     model_id=os.environ.get("AI_MODEL", "gpt-4o"),
-#     client_args={"api_key": os.environ.get("AI_API_KEY", ""), "base_url": os.environ.get("AI_API_URL", "https://api.openai.com/v1")}
+#     client_args={"api_key": os.environ.get("AI_API_KEY", ""), "base_url": os.environ.get("AI_API_URL", "https://api.openai.com/v1"), "http_client": httpx.Client(verify=False)}
 # )
 
 # Option 3: Anthropic direct
