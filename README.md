@@ -11,7 +11,8 @@ A conversational AI assistant with RAG (Retrieval-Augmented Generation), multi-t
 - Persistent Vector Store — ChromaDB with PersistentClient so ingested documents survive restarts
 - Multi-Format Ingestion — Supports .txt, .pdf, and .docx file uploads
 
-Directory Structure
+## Directory Structure
+
 hackathon-strands/
 ├── backend/
 │   ├── main.py              # FastAPI server with /ingest, /query, /session, /health endpoints
